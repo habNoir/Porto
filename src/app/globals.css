@@ -1,0 +1,299 @@
+@import "tailwindcss";
+
+:root {
+  --background: #090a0f;
+  --foreground: #f4f4f5;
+  --font-cinzel-val: var(--font-cinzel);
+  --font-sans-val: var(--font-geist-sans);
+  --font-mono-val: var(--font-geist-mono);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-antiquity: var(--font-cinzel), serif;
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+body {
+  background-color: #090a0f;
+  color: #ededed;
+  font-family: var(--font-geist-sans), sans-serif;
+  overflow-x: clip;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ios-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2), 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+}
+
+.ios-glass-panel {
+  background: rgba(15, 17, 23, 0.65);
+  backdrop-filter: blur(32px) saturate(190%);
+  -webkit-backdrop-filter: blur(32px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25), 0 24px 48px -12px rgba(0, 0, 0, 0.85);
+}
+
+.ios-glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  transition: all 0.25s ease-out;
+}
+
+.ios-glass-card:hover {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3), 0 20px 40px -12px rgba(0, 0, 0, 0.85);
+  transform: translateY(-2px);
+}
+
+.ios-glass-pill {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.blueprint-grid {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px, 10px 10px, 10px 10px;
+}
+
+.dither-scanline {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.35) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01),
+    rgba(255, 255, 255, 0.02)
+  );
+  background-size: 100% 3px, 6px 100%;
+}
+
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(22px);
+  filter: blur(4px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), filter 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-fade-up.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.reveal-mask-container {
+  overflow: hidden;
+  display: block;
+}
+
+.reveal-mask-content {
+  transform: translateY(115%);
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.reveal-mask-container.is-revealed .reveal-mask-content {
+  transform: translateY(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.97) translateY(14px);
+  filter: blur(4px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), filter 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-scale.is-revealed {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  filter: blur(0);
+}
+
+@keyframes surface-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(44px) scale(0.94);
+    filter: blur(5px);
+  }
+  24% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+  76% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-36px) scale(0.96);
+    filter: blur(4px);
+  }
+}
+
+.surface-rise {
+  animation: surface-rise linear both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+  will-change: transform, opacity, filter;
+}
+
+@keyframes scroll-enter-center {
+  0% {
+    opacity: 0;
+    transform: perspective(1000px) translateZ(-80px) scale(0.88) translateY(64px);
+    filter: blur(8px);
+  }
+  20% {
+    opacity: 1;
+    transform: perspective(1000px) translateZ(0) scale(1) translateY(0);
+    filter: blur(0);
+  }
+  80% {
+    opacity: 1;
+    transform: perspective(1000px) translateZ(0) scale(1) translateY(0);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: perspective(1000px) translateZ(-60px) scale(0.90) translateY(-64px);
+    filter: blur(8px);
+  }
+}
+
+.scroll-enter-center {
+  animation: scroll-enter-center linear both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+  will-change: transform, opacity, filter;
+  transform-style: preserve-3d;
+}
+
+@keyframes scroll-bidirectional-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(28px);
+    filter: blur(4px);
+  }
+  14% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  86% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-28px);
+    filter: blur(4px);
+  }
+}
+
+.scroll-bidirectional {
+  animation: scroll-bidirectional-fade linear both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 100%;
+  will-change: opacity, transform, filter;
+}
+
+.scroll-bidirectional-fallback {
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1), filter 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+.scroll-bidirectional-fallback.state-entering-bottom {
+  opacity: 0;
+  transform: translateY(28px);
+  filter: blur(4px);
+}
+
+.scroll-bidirectional-fallback.state-in-view {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.scroll-bidirectional-fallback.state-exited-top {
+  opacity: 0;
+  transform: translateY(-28px);
+  filter: blur(4px);
+}
+
+.viewport-edge-fade-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 96px;
+  pointer-events: none;
+  z-index: 35;
+  background: linear-gradient(to bottom, #090a0f 0%, rgba(9, 10, 15, 0.8) 45%, transparent 100%);
+}
+
+.viewport-edge-fade-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  pointer-events: none;
+  z-index: 35;
+  background: linear-gradient(to top, #090a0f 0%, rgba(9, 10, 15, 0.8) 45%, transparent 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-fade-up,
+  .reveal-scale,
+  .reveal-mask-content,
+  .scroll-bidirectional,
+  .scroll-bidirectional-fallback,
+  .scroll-enter-center,
+  .surface-rise {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+}
