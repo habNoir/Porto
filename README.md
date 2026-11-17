@@ -16,7 +16,7 @@ Portofolio pribadi **Alwahab Dzulikroom Butudoka (habNoir)**. Siswa jurusan Reka
 2. **Koleksi Proyek Nyata:**
    - KinerjaKU — BP3MI Sulawesi Tengah (Sistem Laporan Kinerja & PDF Import)
    - AM Activator (Alight Motion Reverse Engineering via MCP REA)
-   - Absensi Digital SMK Go Global (Presensi selfie & GPS)
+   - Absensi Digital SMK Go Global (Presensi selfie & GPS peserta SMK Go Global Sulteng)
    - marimo WhatsApp Bot Engine (Baileys & SQLite)
    - Vibe Motion Lyrics Studio (React 19 & Vite)
    - Tugas Pemrograman PHP SMK (Array Map & Conditionals)

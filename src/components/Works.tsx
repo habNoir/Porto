@@ -82,17 +82,17 @@ const projects: ProjectItem[] = [
     image: "/projects/absensi-digital.jpg",
     title: "Absensi Digital SMK Go Global",
     summary:
-      "Aplikasi presensi online berbasis web mobile untuk siswa PKL dan staf di BP3MI Sulawesi Tengah. Dilengkapi capture kamera selfie via browser dan validasi radius lokasi GPS.",
+      "Aplikasi presensi online berbasis web mobile untuk peserta program SMK Go Global di Sulawesi Tengah. Dilengkapi capture kamera selfie via browser dan validasi radius lokasi GPS.",
     isPrivate: true,
     details: {
       role: "Fullstack Developer",
       dateInfo: "Dibuat saat PKL Semester 1 Kelas 3 SMK (2026)",
       overview:
-        "Sistem absensi mandiri yang dirancang responsif mobile untuk mencatat kehadiran siswa dan staf secara akurat dengan foto selfie dan verifikasi koordinat lokasi.",
+        "Sistem absensi mandiri yang dirancang responsif mobile khusus untuk mencatat kehadiran peserta program SMK Go Global di Sulawesi Tengah secara akurat dengan foto selfie dan verifikasi koordinat lokasi.",
       features: [
         "Capture foto selfie verifikasi langsung via Web Camera API di browser",
         "Validasi koordinat GPS realtime via Geolocation API perangkat",
-        "Formulir data instansi dan identitas yang mudah diakses di smartphone",
+        "Formulir data peserta program SMK Go Global yang mudah diakses di smartphone",
         "Penyimpanan dan rekapitulasi data absensi ke basis data internal",
       ],
     },

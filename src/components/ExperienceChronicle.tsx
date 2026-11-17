@@ -24,7 +24,7 @@ const chronicleList: ExperienceItem[] = [
       "Siswa jurusan Rekayasa Perangkat Lunak (RPL) yang sedang menjalani PKL di BP3MI Sulawesi Tengah dan menyelesaikan 2 proyek instansi. Membuka jasa pembuatan website custom, jasa joki semua tugas pelajar (sekolah & kuliah) di Instagram, opreker Android, dan bersiap menyambut semester 2 tahun depan (2027) untuk lanjut kuliah di UIB.",
     points: [
       "Mengembangkan backend dan implementasi sistem pelaporan KinerjaKU (PHP, MySQL, PDF parser) di BP3MI Sulteng saat PKL.",
-      "Membangun aplikasi presensi mandiri Absensi Digital SMK Go Global berbasis mobile dengan Web Camera API & Geolocation GPS.",
+      "Membangun aplikasi presensi mandiri Absensi Digital SMK Go Global berbasis mobile dengan Web Camera API & Geolocation GPS untuk peserta SMK Go Global di Sulawesi Tengah.",
       "Membuka jasa pembuatan website (landing page, sistem informasi, toko online) dan jasa joki semua tugas pelajar/akademik di Instagram.",
       "Melakukan reverse engineering alur aktivasi Alight Motion (AM Activator) menggunakan bantuan MCP REA dan Next.js.",
       "Aktif sebagai opreker HP Android dan bersiap menuju semester 2 tahun depan (2027) untuk lanjut S1 TI di Universitas Internasional Batam.",
@@ -88,7 +88,7 @@ const chronicleLedger = [
     phase: "BP3MI Sulawesi Tengah",
     program: "Praktik Kerja Lapangan (PKL)",
     status: "Sedang Berjalan",
-    detail: "Membangun sistem KinerjaKU (PHP & PDF parser) dan aplikasi Absensi Mandiri Digital SMK Go Global.",
+    detail: "Membangun sistem KinerjaKU (PHP & PDF parser) dan aplikasi Absensi Digital bagi peserta SMK Go Global Sulawesi Tengah.",
   },
   {
     period: "2024 — Sekarang",
