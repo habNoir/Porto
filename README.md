@@ -19,7 +19,6 @@ Portofolio pribadi **Alwahab Dzulikroom Butudoka (habNoir)**. Siswa jurusan Reka
    - Absensi Digital SMK Go Global (Presensi selfie & GPS)
    - marimo WhatsApp Bot Engine (Baileys & SQLite)
    - Vibe Motion Lyrics Studio (React 19 & Vite)
-   - habNoir.github.io (Interactive Web App)
    - Tugas Pemrograman PHP SMK (Array Map & Conditionals)
    - KeyBotz WhatsApp Bot
    - NotAFK-HAB (C++ Utility)
