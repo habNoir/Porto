@@ -96,10 +96,9 @@ const projects: ProjectItem[] = [
     title: "Absensi Digital SMK Go Global",
     summary:
       "Aplikasi presensi online berbasis web mobile khusus untuk peserta program SMK Go Global di Sulawesi Tengah. Mengadopsi Design System KinerjaKU dengan kamera selfie WebRTC, GPS akurasi tinggi, proteksi 3 lapis, dan backend Google Sheets.",
-    liveUrl: "https://absensi-digital-smk.vercel.app",
     isPrivate: true,
     details: {
-      role: "Fullstack Developer (Repo Privat absensi-digital-smk)",
+      role: "Fullstack Developer (Private Repository)",
       dateInfo: "Dikembangkan saat PKL Semester 1 Kelas 3 SMK (November 2026)",
       overview:
         "Sistem absensi mandiri untuk peserta program SMK Go Global Sulawesi Tengah (BP3MI Sulteng). Menghubungkan antarmuka mobile KinerjaKU Design System ke Vercel Serverless Functions & Google Sheets sebagai otoritas data tunggal, plus fallback PHP lokal.",
