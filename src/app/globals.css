@@ -265,10 +265,10 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 96px;
+  height: 72px;
   pointer-events: none;
-  z-index: 35;
-  background: linear-gradient(to bottom, #090a0f 0%, rgba(9, 10, 15, 0.8) 45%, transparent 100%);
+  z-index: 30;
+  background: linear-gradient(to bottom, #090a0f 0%, rgba(9, 10, 15, 0.72) 45%, transparent 100%);
 }
 
 .viewport-edge-fade-bottom {
@@ -276,24 +276,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 56px;
   pointer-events: none;
-  z-index: 35;
-  background: linear-gradient(to top, #090a0f 0%, rgba(9, 10, 15, 0.8) 45%, transparent 100%);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal-fade-up,
-  .reveal-scale,
-  .reveal-mask-content,
-  .scroll-bidirectional,
-  .scroll-bidirectional-fallback,
-  .scroll-enter-center,
-  .surface-rise {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-    filter: none !important;
-    transition: none !important;
-  }
+  z-index: 30;
+  background: linear-gradient(to top, #090a0f 0%, rgba(9, 10, 15, 0.65) 45%, transparent 100%);
 }

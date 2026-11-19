@@ -18,8 +18,8 @@ export default function Home() {
       <div className="viewport-edge-fade-top" aria-hidden="true" />
       <div className="viewport-edge-fade-bottom" aria-hidden="true" />
 
-      <main className="flex-1 w-full pt-4 pb-12">
-        <StackingSection id="tentang" zIndex={10}>
+      <main className="flex-1 w-full pt-20 sm:pt-24 pb-12">
+        <StackingSection id="tentang" zIndex={10} className="!mt-2 sm:!mt-4">
           <Hero />
         </StackingSection>
 

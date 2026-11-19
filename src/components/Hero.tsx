@@ -9,7 +9,7 @@ import { ScrollReveal } from "./ScrollReveal";
 
 export function Hero() {
   return (
-    <div className="relative min-h-[85vh] flex flex-col justify-center items-center pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <div className="relative flex flex-col justify-center items-center py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
       <ScrollReveal variant="fade-up" delay={0}>
         <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
           <span className="ios-glass-pill px-3 py-1 rounded-full text-[11px] font-mono text-zinc-300">
@@ -85,13 +85,13 @@ export function Hero() {
       <ScrollReveal variant="fade-up" delay={240} className="w-full">
         <div className="w-full mt-12 relative rounded-2xl overflow-hidden ios-glass border border-white/[0.12] p-1 shadow-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 bg-[#0c0d12] rounded-xl overflow-hidden">
-          <div className="lg:col-span-7 h-[240px] sm:h-[300px] relative border-b lg:border-b-0 lg:border-r border-white/[0.08]">
-            <GreekColumnIllustration className="h-full" />
-            <div className="absolute top-4 left-4 ios-glass-pill px-3 py-1 rounded text-[10px] font-mono text-zinc-300">
-              RPL FOUNDATION // SMKN 3 PALU
+          <div className="lg:col-span-7 flex flex-col border-b lg:border-b-0 lg:border-r border-white/[0.08]">
+            <div className="h-[220px] sm:h-[265px] relative flex-1">
+              <GreekColumnIllustration className="h-full" />
             </div>
-            <div className="absolute bottom-4 right-4 text-[10px] font-mono text-zinc-500">
-              SMK 2024 — SULTENG
+            <div className="px-4 py-2.5 border-t border-white/[0.08] bg-[#090a0f]/90 flex flex-wrap items-center justify-between gap-2 text-[10px] font-mono">
+              <span className="text-zinc-300 tracking-wider">RPL FOUNDATION // SMKN 3 PALU</span>
+              <span className="text-zinc-500">SMK 2024 — SULTENG</span>
             </div>
           </div>
 

@@ -24,9 +24,9 @@ const chronicleList: ExperienceItem[] = [
       "Siswa jurusan Rekayasa Perangkat Lunak (RPL) yang sedang menjalani PKL di BP3MI Sulawesi Tengah dan menyelesaikan 2 proyek instansi. Membuka jasa pembuatan website custom, jasa joki semua tugas pelajar (sekolah & kuliah) di Instagram, opreker Android, dan bersiap menyambut semester 2 tahun depan (2027) untuk lanjut kuliah di UIB.",
     points: [
       "Mengembangkan backend dan implementasi sistem pelaporan KinerjaKU (PHP, MySQL, PDF parser) di BP3MI Sulteng saat PKL.",
-      "Membangun aplikasi presensi mandiri Absensi Digital SMK Go Global berbasis mobile dengan Web Camera API & Geolocation GPS untuk peserta SMK Go Global di Sulawesi Tengah.",
+      "Membangun aplikasi presensi mandiri Absensi Digital SMK Go Global (WebRTC selfie, Geolocation GPS, proteksi 3-lapis, otoritas Google Sheets & backend) untuk peserta SMK Go Global Sulawesi Tengah.",
       "Membuka jasa pembuatan website (landing page, sistem informasi, toko online) dan jasa joki semua tugas pelajar/akademik di Instagram.",
-      "Melakukan reverse engineering alur aktivasi Alight Motion (AM Activator) menggunakan bantuan MCP REA dan Next.js.",
+      "Membangun platform AM Activator v2.0 (am.habnoir.xyz) berbasis Next.js, Google OIDC, PostgreSQL/Prisma, dan atomic quota engine.",
       "Aktif sebagai opreker HP Android dan bersiap menuju semester 2 tahun depan (2027) untuk lanjut S1 TI di Universitas Internasional Batam.",
     ],
     skills: ["PHP", "MySQL", "Next.js", "TypeScript", "Jasa Pembuatan Web", "Joki Tugas Pelajar", "MCP REA"],
@@ -142,12 +142,12 @@ export function ExperienceChronicle() {
 
         <div className="relative border-l border-white/[0.12] ml-3 sm:ml-6 pl-6 sm:pl-8 space-y-10">
           {chronicleList.map((item, idx) => (
-            <ScrollReveal key={idx} variant="surface-rise" delay={idx * 70}>
-              <div className="relative group">
-                <div className="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full ios-glass-pill flex items-center justify-center border border-white/[0.2] bg-[#0c0d12]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-white opacity-80" />
-                </div>
+            <div key={idx} className="relative group">
+              <div className="absolute -left-[32.5px] sm:-left-[40.5px] top-6 w-4 h-4 rounded-full ios-glass-pill flex items-center justify-center border border-white/[0.2] bg-[#0c0d12] z-10">
+                <span className="w-1.5 h-1.5 rounded-full bg-white opacity-80" />
+              </div>
 
+              <ScrollReveal variant="surface-rise" delay={idx * 70}>
                 <div className="ios-glass-card rounded-2xl p-6 sm:p-7 border border-white/[0.1] hover:border-white/[0.2] space-y-4">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-white/[0.06] pb-3">
                     <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-300">
@@ -194,8 +194,8 @@ export function ExperienceChronicle() {
                     ))}
                   </div>
                 </div>
-              </div>
-            </ScrollReveal>
+              </ScrollReveal>
+            </div>
           ))}
         </div>
       </div>
